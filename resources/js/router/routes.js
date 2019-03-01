@@ -1,7 +1,8 @@
 // import App from './components/App'
 import Hello from '../components/Hello'
 import Home from '../components/Home'
-import ExampleComponent from '../components/ExampleComponent.vue';
+import ExampleComponent from '../components/ExampleComponent.vue'
+import UsersIndex from '../components/UserIndex.vue'
 
 export const routes = [
 	{
@@ -18,5 +19,10 @@ export const routes = [
         path: '/example',
         name: 'example',
         component: ExampleComponent,
+    },
+    {
+        path: '/users',
+        name: 'users.index',
+        component: UsersIndex,
     },
 ]

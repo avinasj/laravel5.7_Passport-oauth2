@@ -24,3 +24,9 @@ Route::post('login', 'AuthController@login');
 Route::group(['middleware' => 'auth:api'], function() {
 	Route::get('posts', 'PostController@posts');
 });
+
+// Route::get('posts', 'PostController@posts');
+
+Route::get('/users', function () {
+    // return factory('App\Models\User', 10)->make();
+});
